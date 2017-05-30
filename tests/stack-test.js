@@ -1,5 +1,5 @@
 import test from 'ava';
-import Stack from '../stack2.js';
+import { Stack } from '../stack2.js';
 
 test('it works', t => {
   t.plan(1);
@@ -31,6 +31,16 @@ test('pushing onto stack updates count', t => {
   stack.push("Hello");
 
   t.truthy(stack.count() === 1);
+});
+
+test('the stack can overflow', t => {
+  t.plan(1);
+
+  const stack = new Stack(1);
+
+  stack.push("Hello");
+
+  t.truthy(stack.push("Hello") === "Max capacity already reached. Remove element before adding a new one.");
 });
 
 test('it implements the pop interface', t => {
@@ -89,4 +99,16 @@ test('peeking does not remove element', t => {
   stack.peek();
 
   t.truthy(stack.count() === 1);
+});
+
+test('peeking several times works', t => {
+  t.plan(1);
+
+  const stack = new Stack();
+
+  stack.push("Hello");
+  stack.push("Goodbye");
+  stack.peek();
+
+  t.truthy(stack.peek() === "Goodbye");
 });
