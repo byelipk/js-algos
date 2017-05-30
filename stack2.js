@@ -113,4 +113,54 @@ You are given three towers (stacks) and N disks, each of different size. You can
 The disks begin on tower#1. Write a function that will move the disks from tower#1 to tower#3 in such a way that none of the constraints are violated.
  */
 
-module.exports = { Stack };
+ class MinStack {
+   constructor(capacity) {
+     this._capacity = capacity || 5;
+     this._count    = 0;
+     this._storage  = {};
+
+     // Values only move onto this stack if they
+     // are smaller than all the previous values.
+     this._min      = new Stack();
+   }
+
+   push(val) {
+     if (this._count < this._capacity) {
+       if (this._min.peek() < val) {
+         this._min.push(this._min.peek()) // Duplicate current min value
+       }
+       else {
+         this._min.push(val);
+       }
+       this._storage[this._count] = val;
+       this._count++;
+       return this._count;
+     }
+
+    return "Max capacity already reached." +
+           "Remove element before adding a new one.";
+   }
+
+   pop() {
+     // NOTE
+     // Implemented the same way as the traditional stack.
+     // Remember to call this._min.pop()
+     if (this._count > 0) {
+       this._min.pop();
+       let value = this._storage[--this._count];
+       delete this._storage[this._count];
+
+       return value;
+     }
+   }
+
+   min() {
+     return this._min.peek();
+   }
+
+   count() {
+     return this._count;
+   }
+ }
+
+module.exports = { Stack, MinStack };

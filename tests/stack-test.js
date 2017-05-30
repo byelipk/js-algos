@@ -1,5 +1,5 @@
 import test from 'ava';
-import { Stack } from '../stack2.js';
+import { Stack, MinStack } from '../stack2.js';
 
 test('it works', t => {
   t.plan(1);
@@ -111,4 +111,44 @@ test('peeking several times works', t => {
   stack.peek();
 
   t.truthy(stack.peek() === "Goodbye");
+});
+
+test('MinStack implements the min interface', t => {
+  t.plan(1);
+
+  const stack = new MinStack();
+
+  t.is(typeof(stack.min), "function");
+});
+
+test('MinStack#min returns the minimum element in the stack', t => {
+  t.plan(9);
+
+  const stack = new MinStack();
+
+  stack.push(10);
+  stack.push(5);
+  stack.push(-2);
+
+  t.truthy(stack.min() === -2);
+
+  stack.pop();
+
+  t.truthy(stack.min() === 5);
+  t.truthy(stack.count() === 2);
+
+  stack.pop();
+
+  t.truthy(stack.min() === 10);
+  t.truthy(stack.count() === 1);
+
+  stack.pop();
+
+  t.truthy(stack.min() === undefined);
+  t.truthy(stack.count() === 0);
+
+  stack.push(1)
+
+  t.truthy(stack.min() === 1);
+  t.truthy(stack.count() === 1);
 });
