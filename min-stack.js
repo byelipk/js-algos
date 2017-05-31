@@ -1,4 +1,4 @@
-const Stack = require("./stack2.js").Stack;
+const Stack = require("./stack.js").Stack;
 
 
 // *** Operations:
@@ -40,10 +40,21 @@ const Stack = require("./stack2.js").Stack;
 
 class MinStack {
 
+  // MinStack works by maintaining two separate stacks. One stack,
+  // the min stack, will only contain elements with the minimum value.
+  // The main stack will contain all elements.
+
+  // If memory isn't a big deal, MinStack can be useful.
+  // Some IRL problems involve finding the distance of
+  // a new value from the minimum.
+
   constructor(capacity) {
     this._capacity = capacity || Infinity;
     this._count    = Number(0);
     this._storage  = new Object;
+
+    // Values only move onto this stack if they
+    // are smaller than all the previous values.
     this._minStack = new Stack(capacity);
   }
 
@@ -59,7 +70,8 @@ class MinStack {
       return this.count();
     }
 
-    return "ERROR!";
+    return "Max capacity already reached." +
+           "Remove element before adding a new one.";
   }
 
   pop() {
