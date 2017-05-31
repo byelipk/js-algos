@@ -40,6 +40,8 @@ class StackQueue {
   }
 
   dequeue() {
+    // We only sync the queues when we need to pop values and
+    // we have nothing in the out queue.
     if (this._stackOut.count() === 0) { this._musicalChairs(); }
     return this._stackOut.pop();
   }
