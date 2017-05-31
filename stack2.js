@@ -114,6 +114,9 @@ The disks begin on tower#1. Write a function that will move the disks from tower
  */
 
  class MinStack {
+   // MinStack works by maintaining two separate stacks. One stack,
+   // the min stack, will only contain elements with the minimum value.
+   // The main stack will contain all elements.
    constructor(capacity) {
      this._capacity = capacity || 5;
      this._count    = 0;
