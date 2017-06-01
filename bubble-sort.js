@@ -6,9 +6,10 @@ class BubbleSort {
       return list;
     }
 
+    // The time complexity is O(n^2)
     for (let i = 0; i < (list.length - 1); i++) {
       let swapped = false;
-      
+
       for (let j = 0; j < (list.length - 1 - i); j++) {
         if (list[j + 1] < list[j]) {
           let temp = list[j];
