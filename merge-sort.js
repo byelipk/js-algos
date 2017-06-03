@@ -10,6 +10,9 @@ class MergeSort {
   // 3. Do work on each subset
   // 4. Combine solutions
   //
+  // O(n log n) time complexity.
+  // We derive the O(n log) by recursively building sorted arrays.
+  // The additional n is because of the merge at the end.
 
 
   // Pseudo code for the merge sort wrapper function.
@@ -36,7 +39,7 @@ class MergeSort {
     const left  = this.run(unsorted.slice(0, midpoint));
     const right = this.run(unsorted.slice(midpoint, unsorted.length));
 
-    // Merge everything together
+    // Merge everything together.
     return this._merge(left, right);
   }
 
@@ -68,6 +71,7 @@ class MergeSort {
   //
   // end procedure
   _merge(left, right) {
+    // Linear time complexity
     const output = new Array;
 
     while(left.length > 0 && right.length > 0) {
