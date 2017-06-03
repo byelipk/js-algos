@@ -32,12 +32,10 @@ class MergeSort {
     // The base case
     if (unsorted.length === 1) return unsorted;
 
-    // Find the dividing line of the array
+    // Divide and conquer!!! 😆
     const midpoint = Math.floor(unsorted.length / 2);
-
-    // Do the recursion
-    const left  = this.run(unsorted.slice(0, midpoint));
-    const right = this.run(unsorted.slice(midpoint, unsorted.length));
+    const left     = this.run(unsorted.slice(0, midpoint));
+    const right    = this.run(unsorted.slice(midpoint, unsorted.length));
 
     // Merge everything together.
     return this._merge(left, right);
