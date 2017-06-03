@@ -36,7 +36,6 @@ class MergeSort {
     const left  = this.run(unsorted.slice(0, midpoint));
     const right = this.run(unsorted.slice(midpoint, unsorted.length));
 
-    debugger;
     // Merge everything together
     return this._merge(left, right);
   }
