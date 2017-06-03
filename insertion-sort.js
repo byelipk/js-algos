@@ -48,7 +48,7 @@ class InsertionSort {
       else {
         const length = sorted.length;
         for (var j = 0; j < length; j++) {
-          if (value > sorted[j]) {
+          if (this._compare(value, sorted[j])) {
             if (j === sorted.length - 1) {
               // this will increment the length value of `sorted`
               // which can cause the program to keep pushing
@@ -66,16 +66,16 @@ class InsertionSort {
   }
 }
 
-const inserter = new InsertionSort();
+let inserter = new InsertionSort();
 
-// console.log(inserter.run([90,30,20,10]));
-// console.log(inserter.run([9,2,5,3,7,6,1,0,4,8]));
-// console.log(inserter.run([5,4,3,2,1]));
-// console.log(inserter.run([2,3,1,0]));
+console.log(inserter.run([90,30,20,10]));
+console.log(inserter.run([9,2,5,3,7,6,1,0,4,8]));
+console.log(inserter.run([5,4,3,2,1]));
+console.log(inserter.run([2,3,1,0]));
 
-// const func = (a,b) => a.value > b.value;
-// console.log(
-//   inserter.run(
-//     [{value: 15}, {value: 10, order: 1}, {value: 10, order: 2}], func));
+inserter = new InsertionSort((a, b) => a.order > b.order);
+console.log(
+  inserter.run(
+    [{value: 15, order: 3}, {value: 10, order: 1}, {value: 10, order: 2}]));
 
 module.exports = InsertionSort;
