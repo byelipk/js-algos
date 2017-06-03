@@ -11,8 +11,8 @@ class MergeSort {
   // 4. Combine solutions
   //
   // O(n log n) time complexity.
-  // We derive the O(n log) by recursively building sorted arrays.
-  // The additional n is because of the merge at the end.
+  // We derive the O(log n) by recursively building sorted arrays.
+  // The additional O(n) is because of the merge at the end.
 
 
   // Pseudo code for the merge sort wrapper function.
