@@ -53,7 +53,8 @@ class InsertionSort {
               // this will increment the length value of `sorted`
               // which can cause the program to keep pushing
               // items onto the array.
-              sorted.push(value); }
+              sorted.push(value);
+            }
           }
           else {
             sorted.splice(j, 0, value); break;
