@@ -18,6 +18,9 @@
 //    larger values;
 //
 // Arrays of zero or one are already sorted.
+//
+// If the input data to a quick sort is mostly sorted, the efficiency
+// becomes O(n^2)
 
 class QuickSort {
 
