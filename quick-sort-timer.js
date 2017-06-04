@@ -10,10 +10,6 @@ class QuickSort {
 
   }
 
-  swap(array, i, j) {
-    
-  }
-
 }
 
 const sorter = new QuickSort();
