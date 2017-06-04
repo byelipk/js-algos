@@ -1,5 +1,5 @@
 import test from 'ava';
-import Queue from '../queue.js';
+import Queue from '../data-structures/queue.js';
 
 test('it works', t => {
   t.plan(1);

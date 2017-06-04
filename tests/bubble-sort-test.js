@@ -1,5 +1,5 @@
 import test from "ava";
-import BubbleSort from "../bubble-sort.js";
+import BubbleSort from "../sorting/bubble-sort.js";
 
 test('it works', t => {
   t.plan(1);

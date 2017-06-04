@@ -1,5 +1,5 @@
 import test from "ava";
-import InsertionSort from "../insertion-sort.js";
+import InsertionSort from "../sorting/insertion-sort.js";
 
 test('an array of one item', t => {
   t.plan(1);

@@ -1,5 +1,5 @@
 import test from 'ava';
-import StackQueue from '../stack-queue.js';
+import StackQueue from '../data-structures/stack-queue.js';
 
 test('it works', t => {
   t.plan(1);

@@ -1,5 +1,5 @@
 import test from 'ava';
-import MinStack from '../min-stack.js';
+import MinStack from '../data-structures/min-stack.js';
 
 test('it works', t => {
   t.plan(1);

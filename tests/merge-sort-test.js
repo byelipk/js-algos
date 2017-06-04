@@ -1,5 +1,5 @@
 import test from "ava";
-import MergeSort from "../merge-sort.js";
+import MergeSort from "../sorting/merge-sort.js";
 
 test('an array of one item', t => {
   t.plan(1);

@@ -1,5 +1,5 @@
 import test from "ava";
-import SelectionSort from "../selection-sort.js";
+import SelectionSort from "../sorting/selection-sort.js";
 
 test('it works', t => {
   t.plan(1);

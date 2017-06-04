@@ -1,5 +1,5 @@
 import test from 'ava';
-import { Stack } from '../stack.js';
+import { Stack } from '../data-structures/stack.js';
 
 test('it works', t => {
   t.plan(1);

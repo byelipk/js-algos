@@ -1,5 +1,5 @@
 import test from "ava";
-import QuickSort from "../quick-sort.js";
+import QuickSort from "../sorting/quick-sort.js";
 
 test('an array of one item', t => {
   t.plan(1);
