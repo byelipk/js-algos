@@ -37,83 +37,82 @@ class QuickSort {
   //     Quicksort(A[lo..split - 1])
   //     Quicksort(A[lo + 1..hi])
   // end
-  run(list, lo=0, hi=list.length-1) {
+  run(array, lo, hi) {
+    if (array.length < 2) return array;
+
+    if (lo === undefined) lo = 0;
+    if (hi === undefined) hi = array.length - 1;
+
     if (lo < hi) {
-      const split = this.partition(list, lo, hi);
-      this.run(list, lo, split);
-      this.run(list, split + 1, hi);
+      const pivot = this.horare_partition(array, lo, hi);
+
+      this.run(array, lo, pivot);     // items less than pivot
+      this.run(array, pivot+1, hi);   // items greater than pivot
     }
 
-    return list;
-  }
-
-  // ALGORITHM Partition(A[lo..hi])
-  //
-  // def Partition(A[lo..hi]) do
-  //    p <- A[lo]     // pivot (first element in A[lo..hi])
-  //    i <- lo - 1    // index i (left to right scan)
-  //    j <- hi + 1    // index j (right to left scan)
-  //
-  //    repeat
-  //      repeat i <- i + 1 until A[i] >= p
-  //      repeat j <- j - 1 until A[j] <= p
-  //      swap(A[i], A[j])
-  //    until i >= j
-  //
-  //    swap(A[i], A[j])  // undo last swap when i >= j
-  //    swap(A[l], A[j])
-  //
-  //    return j
-  // end
-  partition(list, lo, hi) {
-    // The value at the lowest index position shall be the pivot.
-    // This value does not change during the partition step.
-    const pivot = this._selectPivot(list, lo, hi);
-
-    // We need to keep track of the low and high index positions.
-    // These values will change as we scan the array from low to high
-    // AND from the high to low.
-    let i = lo - 1;
-    let j = hi + 1;
-
-    // We're going to scan the array until the scanning indexes `i`
-    // and `j` match or cross over.
-    do {
-      // scan low->high until the value at A[i] is less than the pivot
-      do { i++ } while ( list[i] < pivot );
-
-      // scan high->low until the value at A[j] is greater than the pivot
-      do { j-- } while ( list[j] > pivot );
-
-      // Move the value at index position ``lo`` to index position ``j``
-      this._swap(list, i, j);
-
-    } while( i < j );
-
-    this._swap(list, i, j); // Undo the last swap when i >= j
-
-    this._swap(list, lo, j); // exchange pivot with j to partition the array
-
-    // Return the index position of the pivot
-    return j;
-  }
-
-  _swap(array, i, j) {
-    let temp = array[j];
-    array[j] = array[i];
-    array[i] = temp;
     return array;
   }
 
-  _selectPivot(array, start, end) {
-    return array[start];
+  // algorithm partition(A, lo, hi) is
+  //     pivot := A[lo]
+  //     i := lo - 1
+  //     j := hi + 1
+  //     loop forever
+  //         do
+  //             i := i + 1
+  //         while A[i] < pivot
+  //
+  //         do
+  //             j := j - 1
+  //         while A[j] > pivot
+  //
+  //         if i >= j then
+  //             return j
+  //
+  //         swap A[i] with A[j]
+  horare_partition(array, lo, hi) {
+    const pivot = this._pivot(array, lo, hi);
+
+    let i = lo - 1;
+    let j = hi + 1;
+
+    while (true) {
+
+      do { i++ } while (array[i] < pivot);
+      do { j-- } while (array[j] > pivot);
+
+      if (i < j) {
+        this.swap(array, i, j);
+      }
+      else {
+        return j;
+      }
+    }
   }
+
+  swap(array, i, j) {
+    let temp = array[j];
+    array[j] = array[i];
+    array[i] = temp;
+  }
+
+  _pivot(array, lo, hi) {
+    return array[Math.floor(lo + (hi - lo) / 2)];
+    // return array[this.random(lo, hi)];
+    // return array[lo];
+  }
+
+  random(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
 }
 
 const sorter = new QuickSort();
 
 console.log(sorter.run([3,7,8,5,2,1,9,5,4]));
 console.log(sorter.run([3,2,1]));
+console.log(sorter.run([5,2,3,1,4]));
 console.log(sorter.run(['a','d','c','b']));
 
 module.exports = QuickSort;
