@@ -68,7 +68,7 @@ class QuickSort {
   partition(list, lo, hi) {
     // The value at the lowest index position shall be the pivot.
     // This value does not change during the partition step.
-    const pivot = list[lo];
+    const pivot = this._selectPivot(list, lo, hi);
 
     // We need to keep track of the low and high index positions.
     // These values will change as we scan the array from low to high
@@ -104,14 +104,16 @@ class QuickSort {
     array[i] = temp;
     return array;
   }
+
+  _selectPivot(array, start, end) {
+    return array[start];
+  }
 }
 
-// const sorter = new QuickSort();
-//
-// const array1 = [3,7,8,5,2,1,9,5,4];
-// const array2 = [3,2,1];
+const sorter = new QuickSort();
 
-// console.log(sorter.run(array2));
-// console.log(sorter.run(array1));
+console.log(sorter.run([3,7,8,5,2,1,9,5,4]));
+console.log(sorter.run([3,2,1]));
+console.log(sorter.run(['a','d','c','b']));
 
 module.exports = QuickSort;
