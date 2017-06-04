@@ -106,12 +106,12 @@ class QuickSort {
   }
 }
 
-const sorter = new QuickSort();
+// const sorter = new QuickSort();
+//
+// const array1 = [3,7,8,5,2,1,9,5,4];
+// const array2 = [3,2,1];
 
-const array1 = [3,7,8,5,2,1,9,5,4];
-const array2 = [3,2,1];
-
-console.log(sorter.run(array2));
-console.log(sorter.run(array1));
+// console.log(sorter.run(array2));
+// console.log(sorter.run(array1));
 
 module.exports = QuickSort;
