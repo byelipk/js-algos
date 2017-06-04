@@ -3,15 +3,15 @@
 
 class QuickSort {
   run(array, lo, hi) {
-    
+
   }
 
-  horare_partition(array, lo, hi) {
+  partition(array, lo, hi) {
 
   }
 
   swap(array, i, j) {
-
+    
   }
 
 }
