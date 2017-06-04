@@ -1,0 +1,184 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+After	data-structures/linked-list.js	/^LinkedList.prototype.insertAfter = function(node, value) {$/;"	c
+After	data-structures/linked-list.js	/^LinkedList.prototype.removeAfter = function(node) {$/;"	c
+Array	benchmarks/qsort-v-msort.js	/^let testArray = randomArray(100000, 1000);$/;"	c
+Array	benchmarks/qsort-v-msort.js	/^randomArray = (length, max) => {$/;"	c
+Before	data-structures/linked-list.js	/^LinkedList.prototype.insertBefore = function(node, value) {$/;"	c
+Before	data-structures/linked-list.js	/^LinkedList.prototype.removeBefore = function(node) {$/;"	c
+Benchmark	benchmarks/qsort-v-msort.js	/^var Benchmark = require('benchmark');$/;"	c
+BubbleSort	sorting/bubble-sort.js	/^class BubbleSort {$/;"	c
+Each	data-structures/linked-list.js	/^LinkedList.prototype.forEach = function(callback) {$/;"	c
+Ex	data-structures/stack.js	/^Ex: balancedParens( 'Math.min(5,(6-3))(' ) => false$/;"	c
+Ex	data-structures/stack.js	/^Ex: balancedParens( 'sqrt(5*(3+8)\/(4-2))' ) => true$/;"	c
+Head	data-structures/linked-list.js	/^LinkedList.prototype.insertHead = function(value) {$/;"	c
+Head	data-structures/linked-list.js	/^LinkedList.prototype.removeHead = function() {$/;"	c
+InsertionSort	sorting/insertion-sort.js	/^class InsertionSort {$/;"	c
+LinkedList	data-structures/linked-list.js	/^function LinkedList(headValue) {$/;"	f
+MergeSort	benchmarks/qsort-v-msort.js	/^var MergeSort = require(".\/merge-sort.js");$/;"	c
+MergeSort	sorting/merge-sort.js	/^class MergeSort {$/;"	c
+MergeSort	timed/merge-sort-timer.js	/^class MergeSort {$/;"	c
+MinStack	data-structures/min-stack.js	/^class MinStack {$/;"	c
+Node	data-structures/linked-list.js	/^LinkedList.prototype.findNode = function(value) {$/;"	c
+Node	data-structures/linked-list.js	/^function Node(value) {$/;"	f
+Queue	data-structures/queue.js	/^function Queue(capacity) {$/;"	f
+QuickSort	benchmarks/qsort-v-msort.js	/^var QuickSort = require(".\/quick-sort.js");$/;"	c
+QuickSort	sorting/quick-sort.js	/^class QuickSort {$/;"	c
+QuickSort	timed/quick-sort-timer.js	/^class QuickSort {$/;"	c
+SelectionSort	sorting/selection-sort.js	/^class SelectionSort {$/;"	c
+Stack	data-structures/min-stack.js	/^const Stack = require(".\/stack.js").Stack;$/;"	c
+Stack	data-structures/stack-queue.js	/^const Stack = require(".\/stack.js").Stack;$/;"	c
+Stack	data-structures/stack.js	/^function Stack(capacity) {$/;"	f
+StackFn	data-structures/string-stack.js	/^let Stack = function StackFn() {$/;"	f
+StackQueue	data-structures/stack-queue.js	/^class StackQueue {$/;"	c
+ToTail	data-structures/linked-list.js	/^LinkedList.prototype.appendToTail = function(value) {$/;"	c
+_merge	sorting/merge-sort.js	/^  _merge(left, right) {$/;"	f
+_musicalChairs	data-structures/stack-queue.js	/^  _musicalChairs() {$/;"	f
+_pivot	sorting/quick-sort.js	/^  _pivot(array, lo, hi) {$/;"	f
+_storage	data-structures/queue.js	/^  this._storage  = {};$/;"	o
+add	benchmarks/qsort-v-msort.js	/^suite.add('MergeSort', function() {$/;"	f
+add	benchmarks/qsort-v-msort.js	/^suite.add('QuickSort', function() {$/;"	f
+appendToTail	data-structures/linked-list.js	/^LinkedList.prototype.appendToTail = function(value) {$/;"	f
+compare	sorting/insertion-sort.js	/^    this._compare = compare || function compare(a, b) { return a > b; }$/;"	f
+computeFactorialIter	recursion/factorial.js	/^function computeFactorialIter(num) {$/;"	f
+computeFactorialRec	recursion/factorial.js	/^function computeFactorialRec(result, num) {$/;"	f
+computeFactorialRec2	recursion/factorial.js	/^function computeFactorialRec2(num) {$/;"	f
+constructor	data-structures/min-stack.js	/^  constructor(capacity) {$/;"	f
+constructor	data-structures/stack-queue.js	/^  constructor(capacity) {$/;"	f
+constructor	sorting/insertion-sort.js	/^  constructor(compare) {$/;"	f
+contains	data-structures/queue.js	/^Queue.prototype.contains = function(value) {$/;"	f
+count	data-structures/min-stack.js	/^  count() {$/;"	f
+count	data-structures/queue.js	/^Queue.prototype.count = function() {$/;"	f
+count	data-structures/stack-queue.js	/^  count() {$/;"	f
+count	data-structures/stack.js	/^Stack.prototype.count = function() {$/;"	f
+decr	data-structures/string-stack.js	/^  decr() {$/;"	f
+dequeue	data-structures/queue.js	/^Queue.prototype.dequeue = function() {$/;"	f
+dequeue	data-structures/stack-queue.js	/^  dequeue() {$/;"	f
+enqueue	data-structures/queue.js	/^Queue.prototype.enqueue = function(value) {$/;"	f
+enqueue	data-structures/stack-queue.js	/^  enqueue(value) {$/;"	f
+exponent	recursion/recursion-exs.js	/^function exponent(base, exp) {$/;"	f
+exports	data-structures/stack.js	/^module.exports = { Stack };$/;"	o
+findNode	data-structures/linked-list.js	/^LinkedList.prototype.findNode = function(value) {$/;"	f
+for	data-structures/queue.js	/^  for (let i = 0; i < this._tail; i++) {$/;"	f
+for	recursion/factorial.js	/^  for (var i = 2; i <= num; i++) {$/;"	f
+for	recursion/recursion-exs.js	/^  for (var i = 0; i < arr.length; i++) {$/;"	f
+for	sorting/insertion-sort.js	/^        for (var j = 0; j < length; j++) {$/;"	f
+for	sorting/insertion-sort.js	/^    for (var i = 0; i < unsorted.length; i++) {$/;"	f
+for	sorting/selection-sort.js	/^      for (var j = i + 1; j < array.length; j++) {$/;"	f
+for	sorting/selection-sort.js	/^    for (var i = 0; i < array.length; i++) {$/;"	f
+forEach	data-structures/linked-list.js	/^LinkedList.prototype.forEach = function(callback) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.appendToTail = function(value) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.findNode = function(value) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.forEach = function(callback) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.insertAfter = function(node, value) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.insertBefore = function(node, value) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.insertHead = function(value) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.pop = function() {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.print = function() {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.remove = function(node) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.removeAfter = function(node) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.removeBefore = function(node) {$/;"	f
+function	data-structures/linked-list.js	/^LinkedList.prototype.removeHead = function() {$/;"	f
+function	data-structures/queue.js	/^Queue.prototype.contains = function(value) {$/;"	f
+function	data-structures/queue.js	/^Queue.prototype.count = function() {$/;"	f
+function	data-structures/queue.js	/^Queue.prototype.dequeue = function() {$/;"	f
+function	data-structures/queue.js	/^Queue.prototype.enqueue = function(value) {$/;"	f
+function	data-structures/queue.js	/^Queue.prototype.peek = function() {$/;"	f
+function	data-structures/queue.js	/^Queue.prototype.until = function(value) {$/;"	f
+function	data-structures/stack.js	/^Stack.prototype.count = function() {$/;"	f
+function	data-structures/stack.js	/^Stack.prototype.peek = function() {$/;"	f
+function	data-structures/stack.js	/^Stack.prototype.pop = function() {$/;"	f
+function	data-structures/stack.js	/^Stack.prototype.push = function(value) {$/;"	f
+function	data-structures/string-stack.js	/^Stack.prototype.pop = function () {$/;"	f
+function	data-structures/string-stack.js	/^Stack.prototype.push = function (val) {$/;"	f
+function	data-structures/string-stack.js	/^Stack.prototype.size = function () {$/;"	f
+horare_partition	sorting/quick-sort.js	/^  horare_partition(array, lo, hi) {$/;"	f
+if	data-structures/linked-list.js	/^  if (head.next) {$/;"	f
+if	data-structures/linked-list.js	/^  if (headValue === undefined) {$/;"	f
+if	data-structures/linked-list.js	/^  if (node.next) {$/;"	f
+if	data-structures/linked-list.js	/^  if (parent === this.head) {$/;"	f
+if	data-structures/min-stack.js	/^    if (this._count < this._capacity) {$/;"	f
+if	data-structures/queue.js	/^    if (this._storage[i] !== value) { count++; }$/;"	f
+if	data-structures/queue.js	/^    if (this._storage[i] === value) { return true; }$/;"	f
+if	data-structures/stack.js	/^  if (this._count < this.capacity) {$/;"	f
+if	data-structures/stack.js	/^  if (this._count > 0) {$/;"	f
+if	recursion/factorial.js	/^    if (i < end) {$/;"	f
+if	recursion/factorial.js	/^  if (i < end) {$/;"	f
+if	recursion/factorial.js	/^  if (num === 0) {$/;"	f
+if	recursion/factorial.js	/^  if (num === 1) {$/;"	f
+if	recursion/recursion-exs.js	/^    if (acc.length === arr.length) {$/;"	f
+if	recursion/recursion-exs.js	/^    if (end <= 1) {$/;"	f
+if	recursion/recursion-exs.js	/^  if (n === 0) {$/;"	f
+if	recursion/recursion.js	/^  if (n === 0) {$/;"	f
+if	sorting/bubble-sort.js	/^        if (list[j + 1] < list[j]) {$/;"	f
+if	sorting/bubble-sort.js	/^    if (list.length === 1) {$/;"	f
+if	sorting/insertion-sort.js	/^            if (j === sorted.length - 1) {$/;"	f
+if	sorting/insertion-sort.js	/^      if (sorted.length === 0) {$/;"	f
+if	sorting/merge-sort.js	/^      if (left[0] < right[0]) { output.push(left.shift()); }$/;"	f
+if	sorting/quick-sort.js	/^      if (i < j) {$/;"	f
+if	sorting/quick-sort.js	/^    if (lo < hi) {$/;"	f
+if	sorting/selection-sort.js	/^        if (array[j] < array[jMin]) {$/;"	f
+if	sorting/selection-sort.js	/^      if (jMin != i) {$/;"	f
+incr	data-structures/string-stack.js	/^  incr() {$/;"	f
+insertAfter	data-structures/linked-list.js	/^LinkedList.prototype.insertAfter = function(node, value) {$/;"	f
+insertBefore	data-structures/linked-list.js	/^LinkedList.prototype.insertBefore = function(node, value) {$/;"	f
+insertHead	data-structures/linked-list.js	/^LinkedList.prototype.insertHead = function(value) {$/;"	f
+iterativeMultiplier	recursion/recursion-exs.js	/^function iterativeMultiplier(arr, num) {$/;"	f
+loopA	recursion/recursion-exs.js	/^function loopA(n) {$/;"	f
+loopB	recursion/recursion-exs.js	/^function loopB(n) {$/;"	f
+merge	timed/merge-sort-timer.js	/^  merge(left, right) {$/;"	f
+min	data-structures/min-stack.js	/^  min() {$/;"	f
+on	benchmarks/qsort-v-msort.js	/^.on('complete', function() {$/;"	f
+on	benchmarks/qsort-v-msort.js	/^.on('cycle', function(event) {$/;"	f
+partition	timed/quick-sort-timer.js	/^  partition(array, lo, hi) {$/;"	f
+peek	data-structures/queue.js	/^Queue.prototype.peek = function() {$/;"	f
+peek	data-structures/stack-queue.js	/^  peek() {$/;"	f
+peek	data-structures/stack.js	/^Stack.prototype.peek = function() {$/;"	f
+pop	data-structures/linked-list.js	/^LinkedList.prototype.pop = function() {$/;"	f
+pop	data-structures/min-stack.js	/^  pop() {$/;"	f
+pop	data-structures/stack.js	/^Stack.prototype.pop = function() {$/;"	f
+pop	data-structures/string-stack.js	/^Stack.prototype.pop = function () {$/;"	f
+print	data-structures/linked-list.js	/^LinkedList.prototype.print = function() {$/;"	f
+push	data-structures/min-stack.js	/^  push(value) {$/;"	f
+push	data-structures/stack.js	/^Stack.prototype.push = function(value) {$/;"	f
+push	data-structures/string-stack.js	/^Stack.prototype.push = function (val) {$/;"	f
+random	sorting/quick-sort.js	/^  random(min, max) {$/;"	f
+recurse	recursion/factorial.js	/^  function recurse(i) {$/;"	f
+recurse	recursion/recursion-exs.js	/^  function recurse(acc) {$/;"	f
+recurse	recursion/recursion-exs.js	/^  function recurse(acc, end) {$/;"	f
+recurse	recursion/recursion-exs.js	/^  function recurse(result, end) {$/;"	f
+recursiveExponent	recursion/recursion-exs.js	/^function recursiveExponent(base, exp) {$/;"	f
+recursiveMultiplier	recursion/recursion-exs.js	/^function recursiveMultiplier(arr, num) {$/;"	f
+recursiveReverse	recursion/recursion-exs.js	/^function recursiveReverse(arr) {$/;"	f
+remove	data-structures/linked-list.js	/^LinkedList.prototype.remove = function(node) {$/;"	f
+removeAfter	data-structures/linked-list.js	/^LinkedList.prototype.removeAfter = function(node) {$/;"	f
+removeBefore	data-structures/linked-list.js	/^LinkedList.prototype.removeBefore = function(node) {$/;"	f
+removeHead	data-structures/linked-list.js	/^LinkedList.prototype.removeHead = function() {$/;"	f
+run	sorting/bubble-sort.js	/^  run(list) {$/;"	f
+run	sorting/insertion-sort.js	/^  run(unsorted) {$/;"	f
+run	sorting/merge-sort.js	/^  run(unsorted) {$/;"	f
+run	sorting/quick-sort.js	/^  run(array, lo, hi) {$/;"	f
+run	sorting/selection-sort.js	/^  run(array) {$/;"	f
+run	timed/merge-sort-timer.js	/^  run(unsorted) {$/;"	f
+run	timed/quick-sort-timer.js	/^  run(array, lo, hi) {$/;"	f
+runLoopAsMyself	recursion/factorial.js	/^function runLoopAsMyself(i, end) {$/;"	f
+runRecursiveLoop	recursion/factorial.js	/^function runRecursiveLoop(start, end) {$/;"	f
+sayHi	recursion/recursion.js	/^function sayHi(n) {$/;"	f
+size	data-structures/string-stack.js	/^Stack.prototype.size = function () {$/;"	f
+swap	sorting/quick-sort.js	/^  swap(array, i, j) {$/;"	f
+time_diff	timer.rb	/^def time_diff(start_time, end_time)$/;"	f
+until	data-structures/queue.js	/^Queue.prototype.until = function(value) {$/;"	f
+while	data-structures/linked-list.js	/^  while (parent) {$/;"	f
+while	data-structures/linked-list.js	/^  while (parent.next && parent.next !== node) {$/;"	f
+while	data-structures/linked-list.js	/^  while (parent.next && parent.next !== this.tail) {$/;"	f
+while	data-structures/linked-list.js	/^  while (parent.next && parent.next.value !== value) {$/;"	f
+while	recursion/recursion-exs.js	/^  while (counter > 1) {$/;"	f
+while	recursion/recursion-exs.js	/^  while(n > 0) {$/;"	f
+while	sorting/merge-sort.js	/^    while(left.length > 0 && right.length > 0) {$/;"	f
+while	sorting/merge-sort.js	/^    while(left.length > 0)  { output.push(left.shift()); }$/;"	f
+while	sorting/merge-sort.js	/^    while(right.length > 0) { output.push(right.shift()); }$/;"	f
+while	sorting/quick-sort.js	/^    while (true) {$/;"	f

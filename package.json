@@ -1,0 +1,28 @@
+{
+  "name": "js-algos",
+  "version": "1.0.0",
+  "description": "Data structures and algorithms",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "ava": "^0.19.1",
+    "benchmark": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/ava/cli.js --verbose",
+    "test-debug": "node --inspect ./node_modules/ava/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byelipk/js-algos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byelipk/js-algos/issues"
+  },
+  "homepage": "https://github.com/byelipk/js-algos#readme"
+}
