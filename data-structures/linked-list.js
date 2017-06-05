@@ -108,20 +108,17 @@ LinkedList.prototype.print = function() {
 // Time complexity:
 
 LinkedList.prototype.insertAfter = function(node, value) {
-  const newNode = new Node(value);
+  let oldNext = node.next;
+  let newNext = new Node(value);
 
-  if (node.next) {
-    newNode.next = node.next;
-  }
-  else if (node === this.tail) {
-    this.tail = newNode;
-  }
+  node.next = newNext;
+  newNext.next = oldNext;
 
-  node.next = newNode;
+  if (this.tail === node) this.tail = newNext;
 
-  return newNode;
+  return newNext;
 };
-// Time complexity:
+// Time complexity: O(1)
 
 LinkedList.prototype.removeAfter = function(node) {
   if (node.next) {
