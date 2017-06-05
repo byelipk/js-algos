@@ -105,7 +105,7 @@ LinkedList.prototype.print = function() {
 
   console.log(result.join(", "));
 };
-// Time complexity:
+// Time complexity: O(n)
 
 LinkedList.prototype.insertAfter = function(node, value) {
   let oldNext = node.next;
