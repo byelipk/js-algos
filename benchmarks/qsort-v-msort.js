@@ -1,6 +1,6 @@
 var Benchmark = require('benchmark');
-var QuickSort = require("./quick-sort.js");
-var MergeSort = require("./merge-sort.js");
+var QuickSort = require("../sorting/quick-sort.js");
+var MergeSort = require("../sorting/merge-sort.js");
 
 
 var suite = new Benchmark.Suite;
