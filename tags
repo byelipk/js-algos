@@ -85,6 +85,8 @@ enqueue	data-structures/queue.js	/^Queue.prototype.enqueue = function(value) {$/
 enqueue	data-structures/stack-queue.js	/^  enqueue(value) {$/;"	f
 exponent	recursion/recursion-exs.js	/^function exponent(base, exp) {$/;"	f
 exports	data-structures/stack.js	/^module.exports = { Stack };$/;"	o
+find	data-structures/bst.js	/^BinarySearchTree.prototype.find = function(value, parent) {$/;"	f
+find	timed/bst.js	/^  find() {$/;"	f
 findNode	data-structures/linked-list.js	/^LinkedList.prototype.findNode = function(value) {$/;"	f
 for	data-structures/queue.js	/^  for (let i = 0; i < this._tail; i++) {$/;"	f
 for	recursion/factorial.js	/^  for (var i = 2; i <= num; i++) {$/;"	f
@@ -97,7 +99,10 @@ forEach	data-structures/linked-list.js	/^LinkedList.prototype.forEach = function
 function	data-structures/bst.js	/^BinarySearchTree.prototype.checkIfBalanced = function() {$/;"	f
 function	data-structures/bst.js	/^BinarySearchTree.prototype.checkIfFull = function() {$/;"	f
 function	data-structures/bst.js	/^BinarySearchTree.prototype.contains = function(value) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.find = function(value, parent) {$/;"	f
 function	data-structures/bst.js	/^BinarySearchTree.prototype.insert = function(value) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.max = function(parent) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.min = function(parent) {$/;"	f
 function	data-structures/bst.js	/^BinarySearchTree.prototype.removeMax = function(parent) {$/;"	f
 function	data-structures/bst.js	/^BinarySearchTree.prototype.removeMin = function(parent) {$/;"	f
 function	data-structures/bst.js	/^BinarySearchTree.prototype.removeNode = function(value) {$/;"	f
@@ -134,15 +139,26 @@ function	data-structures/tree.js	/^Tree.prototype.contains = function(value) {$/
 function	data-structures/tree.js	/^Tree.prototype.traverseBreadthFirst = function(fn) {$/;"	f
 function	data-structures/tree.js	/^Tree.prototype.traverseDepthFirst = function(fn) {$/;"	f
 horare_partition	sorting/quick-sort.js	/^  horare_partition(array, lo, hi) {$/;"	f
+if	data-structures/bst.js	/^        else if (parent.right === node) { parent.right = null; }$/;"	f
+if	data-structures/bst.js	/^        if      (parent.left === node)  { parent.left = null; }$/;"	f
+if	data-structures/bst.js	/^      if (node.value < parent.value) {$/;"	f
+if	data-structures/bst.js	/^      if (parent) {$/;"	f
+if	data-structures/bst.js	/^    else if (!node.left && node.right) {$/;"	f
+if	data-structures/bst.js	/^    else if (node.left && !node.right) {$/;"	f
+if	data-structures/bst.js	/^    else if (node.left && node.right) {$/;"	f
+if	data-structures/bst.js	/^    if (!node.left && !node.right) {$/;"	f
 if	data-structures/bst.js	/^    if (parent) { parent.left = null; }$/;"	f
 if	data-structures/bst.js	/^    if (parent) { parent.left = this.right; }$/;"	f
 if	data-structures/bst.js	/^    if (parent) { parent.right = null }$/;"	f
 if	data-structures/bst.js	/^    if (parent) { parent.right = this.left }$/;"	f
 if	data-structures/bst.js	/^    if (this.left) { return this.left.contains(value); }$/;"	f
+if	data-structures/bst.js	/^    if (this.left) { return this.left.find(value, this); }$/;"	f
 if	data-structures/bst.js	/^    if (this.right) { return this.right.contains(value); }$/;"	f
+if	data-structures/bst.js	/^    if (this.right) { return this.right.find(value, this); }$/;"	f
 if	data-structures/bst.js	/^  else if (!this.left && this.right) {$/;"	f
 if	data-structures/bst.js	/^  else if (this.left && !this.right) {$/;"	f
 if	data-structures/bst.js	/^  if (!this.left && !this.right) {$/;"	f
+if	data-structures/bst.js	/^  if (node) {$/;"	f
 if	data-structures/bst.js	/^  if (this.left) { this.left.removeMin(this); }$/;"	f
 if	data-structures/bst.js	/^  if (value <= this.value) {$/;"	f
 if	data-structures/linked-list.js	/^  if (head.next) {$/;"	f
@@ -181,8 +197,12 @@ isValid	timed/bst.js	/^  isValid() {$/;"	f
 iterativeMultiplier	recursion/recursion-exs.js	/^function iterativeMultiplier(arr, num) {$/;"	f
 loopA	recursion/recursion-exs.js	/^function loopA(n) {$/;"	f
 loopB	recursion/recursion-exs.js	/^function loopB(n) {$/;"	f
+max	data-structures/bst.js	/^BinarySearchTree.prototype.max = function(parent) {$/;"	f
+max	timed/bst.js	/^  max() {$/;"	f
 merge	timed/merge-sort-timer.js	/^  merge(left, right) {$/;"	f
+min	data-structures/bst.js	/^BinarySearchTree.prototype.min = function(parent) {$/;"	f
 min	data-structures/min-stack.js	/^  min() {$/;"	f
+min	timed/bst.js	/^  min() {$/;"	f
 on	benchmarks/qsort-v-msort.js	/^.on('complete', function() {$/;"	f
 on	benchmarks/qsort-v-msort.js	/^.on('cycle', function(event) {$/;"	f
 partition	timed/quick-sort-timer.js	/^  partition(array, lo, hi) {$/;"	f

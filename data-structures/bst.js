@@ -142,16 +142,16 @@ BinarySearchTree.prototype.find = function(value, parent) {
   }
 };
 
-BinarySearchTree.prototype.min = function() {
-  if (!this.left) return this;
+BinarySearchTree.prototype.min = function(parent) {
+  if (!this.left) return {node: this, parent: parent};
 
-  return this.left.min();
+  return this.left.min(this);
 };
 
-BinarySearchTree.prototype.max = function() {
-  if (!this.right) return this;
+BinarySearchTree.prototype.max = function(parent) {
+  if (!this.right) return {node: this, parent: parent};
 
-  return this.right.max();
+  return this.right.max(this);
 };
 
 BinarySearchTree.prototype.removeNode = function(value) {
@@ -221,18 +221,24 @@ BinarySearchTree.prototype.removeNode = function(value) {
     // Case 3: Node to be removed has two children
     else if (node.left && node.right) {
       // Find minimum value in right subtree
-      const rightSubtreeMin = node.right.min();
+      const result = node.right.min();
+      const minNode = result.node;
+      const minNodeParent = result.parent;
 
       // Replace value of node to be removed with found minimum
       if (node.value < parent.value) {
-        parent.left = rightSubtreeMin;
+        parent.left = minNode;
       }
       else {
-        parent.right = rightSubtreeMin;
+        parent.right = minNode;
       }
 
       // Apply remove to the right subtree to remove duplicate
-      node.right.removeMin();
+      minNodeParent.left = null;
+
+      // Balance the minNode
+      minNode.left = node.left;
+      minNode.right = minNodeParent;
     }
 
     else {
@@ -289,19 +295,10 @@ BinarySearchTree.prototype.removeMax = function(parent) {
 // Time complexity:
 
 
-const bst = new BinarySearchTree(6);
+// const bst = new BinarySearchTree(6);
+// bst.insert(2).insert(10).insert(19).insert(0).insert(5).insert(4);
 
-bst.insert(2).insert(10).insert(19).insert(0).insert(5).insert(4);
-
-// bst.insert(2)
-//    .insert(-4)
-//    .insert(3)
-//    .insert(12)
-//    .insert(9)
-//    .insert(21)
-//    .insert(19)
-//    .insert(25);
-
-// bst.removeNode(12);
+const bst = new BinarySearchTree(5);
+bst.insert(2).insert(-4).insert(3).insert(12).insert(9) .insert(21).insert(19).insert(25);
 
 module.exports = BinarySearchTree;
