@@ -121,13 +121,29 @@ BinarySearchTree.prototype.traverseDepthFirst_postOrder = function(fn) {
 };
 // Time complexity: O(log n)
 
+// A binary tree is full if every node has either zero or two children (no nodes have only one child)
 BinarySearchTree.prototype.checkIfFull = function() {
-  // implement me...
+  var result = true;
+  this.traverseBreadthFirst(function(node) {
+    if (!node.left && node.right) result = false;
+    else if (node.left && !node.right) result = false;
+  });
+  return result;
 };
 // Time complexity:
 
+// For this exercise, let's say that a tree is balanced if the minimum height and the maximum height differ by no more than 1. The height for a branch is the number of levels below the root.
 BinarySearchTree.prototype.checkIfBalanced = function() {
-  // implement me...
+  var heights = [];
+  var recurse = function(node, height) {
+    if (!node.left && !node.right) return heights.push(height);
+    node.left && recurse(node.left, height+1);
+    node.right && recurse(node.right, height+1);
+  };
+  recurse(this, 1);
+  var min = Math.min.apply(null, heights);
+  var max = Math.max.apply(null, heights);
+  return max-min <= 1;
 };
 // Time complexity:
 
