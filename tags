@@ -8,25 +8,38 @@ After	data-structures/linked-list.js	/^LinkedList.prototype.insertAfter = functi
 After	data-structures/linked-list.js	/^LinkedList.prototype.removeAfter = function(node) {$/;"	c
 Array	benchmarks/qsort-v-msort.js	/^let testArray = randomArray(100000, 1000);$/;"	c
 Array	benchmarks/qsort-v-msort.js	/^randomArray = (length, max) => {$/;"	c
+BST	timed/bst.js	/^class BST {$/;"	c
 Before	data-structures/linked-list.js	/^LinkedList.prototype.insertBefore = function(node, value) {$/;"	c
 Before	data-structures/linked-list.js	/^LinkedList.prototype.removeBefore = function(node) {$/;"	c
 Benchmark	benchmarks/qsort-v-msort.js	/^var Benchmark = require('benchmark');$/;"	c
+BinarySearchTree	data-structures/bst.js	/^function BinarySearchTree(value) {$/;"	f
+BreadthFirst	data-structures/tree.js	/^Tree.prototype.traverseBreadthFirst = function(fn) {$/;"	c
 BubbleSort	sorting/bubble-sort.js	/^class BubbleSort {$/;"	c
+Child	data-structures/tree.js	/^Tree.prototype.addChild = function(value) {$/;"	c
+DepthFirst	data-structures/tree.js	/^Tree.prototype.traverseDepthFirst = function(fn) {$/;"	c
+DepthFirst_inOrder	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_inOrder = function(fn) {$/;"	c
+DepthFirst_postOrder	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_postOrder = function(fn) {$/;"	c
+DepthFirst_preOrder	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_preOrder = function(fn) {$/;"	c
 Each	data-structures/linked-list.js	/^LinkedList.prototype.forEach = function(callback) {$/;"	c
 Ex	data-structures/stack.js	/^Ex: balancedParens( 'Math.min(5,(6-3))(' ) => false$/;"	c
 Ex	data-structures/stack.js	/^Ex: balancedParens( 'sqrt(5*(3+8)\/(4-2))' ) => true$/;"	c
 Head	data-structures/linked-list.js	/^LinkedList.prototype.insertHead = function(value) {$/;"	c
 Head	data-structures/linked-list.js	/^LinkedList.prototype.removeHead = function() {$/;"	c
+IfBalanced	data-structures/bst.js	/^BinarySearchTree.prototype.checkIfBalanced = function() {$/;"	c
+IfFull	data-structures/bst.js	/^BinarySearchTree.prototype.checkIfFull = function() {$/;"	c
 InsertionSort	sorting/insertion-sort.js	/^class InsertionSort {$/;"	c
 LinkedList	data-structures/linked-list.js	/^function LinkedList(headValue) {$/;"	f
-MergeSort	benchmarks/qsort-v-msort.js	/^var MergeSort = require(".\/merge-sort.js");$/;"	c
+Max	data-structures/bst.js	/^BinarySearchTree.prototype.removeMax = function(parent) {$/;"	c
+MergeSort	benchmarks/qsort-v-msort.js	/^var MergeSort = require("..\/sorting\/merge-sort.js");$/;"	c
 MergeSort	sorting/merge-sort.js	/^class MergeSort {$/;"	c
 MergeSort	timed/merge-sort-timer.js	/^class MergeSort {$/;"	c
+Min	data-structures/bst.js	/^BinarySearchTree.prototype.removeMin = function(parent) {$/;"	c
 MinStack	data-structures/min-stack.js	/^class MinStack {$/;"	c
+Node	data-structures/bst.js	/^BinarySearchTree.prototype.removeNode = function(value) {$/;"	c
 Node	data-structures/linked-list.js	/^LinkedList.prototype.findNode = function(value) {$/;"	c
 Node	data-structures/linked-list.js	/^function Node(value) {$/;"	f
 Queue	data-structures/queue.js	/^function Queue(capacity) {$/;"	f
-QuickSort	benchmarks/qsort-v-msort.js	/^var QuickSort = require(".\/quick-sort.js");$/;"	c
+QuickSort	benchmarks/qsort-v-msort.js	/^var QuickSort = require("..\/sorting\/quick-sort.js");$/;"	c
 QuickSort	sorting/quick-sort.js	/^class QuickSort {$/;"	c
 QuickSort	timed/quick-sort-timer.js	/^class QuickSort {$/;"	c
 SelectionSort	sorting/selection-sort.js	/^class SelectionSort {$/;"	c
@@ -36,13 +49,19 @@ Stack	data-structures/stack.js	/^function Stack(capacity) {$/;"	f
 StackFn	data-structures/string-stack.js	/^let Stack = function StackFn() {$/;"	f
 StackQueue	data-structures/stack-queue.js	/^class StackQueue {$/;"	c
 ToTail	data-structures/linked-list.js	/^LinkedList.prototype.appendToTail = function(value) {$/;"	c
+Tree	data-structures/tree.js	/^function Tree (value) {$/;"	f
 _merge	sorting/merge-sort.js	/^  _merge(left, right) {$/;"	f
 _musicalChairs	data-structures/stack-queue.js	/^  _musicalChairs() {$/;"	f
 _pivot	sorting/quick-sort.js	/^  _pivot(array, lo, hi) {$/;"	f
 _storage	data-structures/queue.js	/^  this._storage  = {};$/;"	o
 add	benchmarks/qsort-v-msort.js	/^suite.add('MergeSort', function() {$/;"	f
 add	benchmarks/qsort-v-msort.js	/^suite.add('QuickSort', function() {$/;"	f
+addChild	data-structures/tree.js	/^Tree.prototype.addChild = function(value) {$/;"	f
 appendToTail	data-structures/linked-list.js	/^LinkedList.prototype.appendToTail = function(value) {$/;"	f
+checkIfBalanced	data-structures/bst.js	/^BinarySearchTree.prototype.checkIfBalanced = function() {$/;"	f
+checkIfBalanced	timed/bst.js	/^  checkIfBalanced() {$/;"	f
+checkIfFull	data-structures/bst.js	/^BinarySearchTree.prototype.checkIfFull = function() {$/;"	f
+checkIfFull	timed/bst.js	/^  checkIfFull() {$/;"	f
 compare	sorting/insertion-sort.js	/^    this._compare = compare || function compare(a, b) { return a > b; }$/;"	f
 computeFactorialIter	recursion/factorial.js	/^function computeFactorialIter(num) {$/;"	f
 computeFactorialRec	recursion/factorial.js	/^function computeFactorialRec(result, num) {$/;"	f
@@ -50,7 +69,11 @@ computeFactorialRec2	recursion/factorial.js	/^function computeFactorialRec2(num)
 constructor	data-structures/min-stack.js	/^  constructor(capacity) {$/;"	f
 constructor	data-structures/stack-queue.js	/^  constructor(capacity) {$/;"	f
 constructor	sorting/insertion-sort.js	/^  constructor(compare) {$/;"	f
+constructor	timed/bst.js	/^  constructor(value) {$/;"	f
+contains	data-structures/bst.js	/^BinarySearchTree.prototype.contains = function(value) {$/;"	f
 contains	data-structures/queue.js	/^Queue.prototype.contains = function(value) {$/;"	f
+contains	data-structures/tree.js	/^Tree.prototype.contains = function(value) {$/;"	f
+contains	timed/bst.js	/^  contains(value) {$/;"	f
 count	data-structures/min-stack.js	/^  count() {$/;"	f
 count	data-structures/queue.js	/^Queue.prototype.count = function() {$/;"	f
 count	data-structures/stack-queue.js	/^  count() {$/;"	f
@@ -71,6 +94,16 @@ for	sorting/insertion-sort.js	/^    for (var i = 0; i < unsorted.length; i++) {$
 for	sorting/selection-sort.js	/^      for (var j = i + 1; j < array.length; j++) {$/;"	f
 for	sorting/selection-sort.js	/^    for (var i = 0; i < array.length; i++) {$/;"	f
 forEach	data-structures/linked-list.js	/^LinkedList.prototype.forEach = function(callback) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.checkIfBalanced = function() {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.checkIfFull = function() {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.contains = function(value) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.insert = function(value) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.removeMax = function(parent) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.removeMin = function(parent) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.removeNode = function(value) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_inOrder = function(fn) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_postOrder = function(fn) {$/;"	f
+function	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_preOrder = function(fn) {$/;"	f
 function	data-structures/linked-list.js	/^LinkedList.prototype.appendToTail = function(value) {$/;"	f
 function	data-structures/linked-list.js	/^LinkedList.prototype.findNode = function(value) {$/;"	f
 function	data-structures/linked-list.js	/^LinkedList.prototype.forEach = function(callback) {$/;"	f
@@ -96,7 +129,22 @@ function	data-structures/stack.js	/^Stack.prototype.push = function(value) {$/;"
 function	data-structures/string-stack.js	/^Stack.prototype.pop = function () {$/;"	f
 function	data-structures/string-stack.js	/^Stack.prototype.push = function (val) {$/;"	f
 function	data-structures/string-stack.js	/^Stack.prototype.size = function () {$/;"	f
+function	data-structures/tree.js	/^Tree.prototype.addChild = function(value) {$/;"	f
+function	data-structures/tree.js	/^Tree.prototype.contains = function(value) {$/;"	f
+function	data-structures/tree.js	/^Tree.prototype.traverseBreadthFirst = function(fn) {$/;"	f
+function	data-structures/tree.js	/^Tree.prototype.traverseDepthFirst = function(fn) {$/;"	f
 horare_partition	sorting/quick-sort.js	/^  horare_partition(array, lo, hi) {$/;"	f
+if	data-structures/bst.js	/^    if (parent) { parent.left = null; }$/;"	f
+if	data-structures/bst.js	/^    if (parent) { parent.left = this.right; }$/;"	f
+if	data-structures/bst.js	/^    if (parent) { parent.right = null }$/;"	f
+if	data-structures/bst.js	/^    if (parent) { parent.right = this.left }$/;"	f
+if	data-structures/bst.js	/^    if (this.left) { return this.left.contains(value); }$/;"	f
+if	data-structures/bst.js	/^    if (this.right) { return this.right.contains(value); }$/;"	f
+if	data-structures/bst.js	/^  else if (!this.left && this.right) {$/;"	f
+if	data-structures/bst.js	/^  else if (this.left && !this.right) {$/;"	f
+if	data-structures/bst.js	/^  if (!this.left && !this.right) {$/;"	f
+if	data-structures/bst.js	/^  if (this.left) { this.left.removeMin(this); }$/;"	f
+if	data-structures/bst.js	/^  if (value <= this.value) {$/;"	f
 if	data-structures/linked-list.js	/^  if (head.next) {$/;"	f
 if	data-structures/linked-list.js	/^  if (headValue === undefined) {$/;"	f
 if	data-structures/linked-list.js	/^  if (node.next) {$/;"	f
@@ -124,9 +172,12 @@ if	sorting/quick-sort.js	/^    if (lo < hi) {$/;"	f
 if	sorting/selection-sort.js	/^        if (array[j] < array[jMin]) {$/;"	f
 if	sorting/selection-sort.js	/^      if (jMin != i) {$/;"	f
 incr	data-structures/string-stack.js	/^  incr() {$/;"	f
+insert	data-structures/bst.js	/^BinarySearchTree.prototype.insert = function(value) {$/;"	f
+insert	timed/bst.js	/^  insert(value) {$/;"	f
 insertAfter	data-structures/linked-list.js	/^LinkedList.prototype.insertAfter = function(node, value) {$/;"	f
 insertBefore	data-structures/linked-list.js	/^LinkedList.prototype.insertBefore = function(node, value) {$/;"	f
 insertHead	data-structures/linked-list.js	/^LinkedList.prototype.insertHead = function(value) {$/;"	f
+isValid	timed/bst.js	/^  isValid() {$/;"	f
 iterativeMultiplier	recursion/recursion-exs.js	/^function iterativeMultiplier(arr, num) {$/;"	f
 loopA	recursion/recursion-exs.js	/^function loopA(n) {$/;"	f
 loopB	recursion/recursion-exs.js	/^function loopB(n) {$/;"	f
@@ -158,6 +209,12 @@ remove	data-structures/linked-list.js	/^LinkedList.prototype.remove = function(n
 removeAfter	data-structures/linked-list.js	/^LinkedList.prototype.removeAfter = function(node) {$/;"	f
 removeBefore	data-structures/linked-list.js	/^LinkedList.prototype.removeBefore = function(node) {$/;"	f
 removeHead	data-structures/linked-list.js	/^LinkedList.prototype.removeHead = function() {$/;"	f
+removeMax	data-structures/bst.js	/^BinarySearchTree.prototype.removeMax = function(parent) {$/;"	f
+removeMax	timed/bst.js	/^  removeMax() {$/;"	f
+removeMin	data-structures/bst.js	/^BinarySearchTree.prototype.removeMin = function(parent) {$/;"	f
+removeMin	timed/bst.js	/^  removeMin() {$/;"	f
+removeNode	data-structures/bst.js	/^BinarySearchTree.prototype.removeNode = function(value) {$/;"	f
+removeNode	timed/bst.js	/^  removeNode(value) {$/;"	f
 run	sorting/bubble-sort.js	/^  run(list) {$/;"	f
 run	sorting/insertion-sort.js	/^  run(unsorted) {$/;"	f
 run	sorting/merge-sort.js	/^  run(unsorted) {$/;"	f
@@ -171,6 +228,14 @@ sayHi	recursion/recursion.js	/^function sayHi(n) {$/;"	f
 size	data-structures/string-stack.js	/^Stack.prototype.size = function () {$/;"	f
 swap	sorting/quick-sort.js	/^  swap(array, i, j) {$/;"	f
 time_diff	timer.rb	/^def time_diff(start_time, end_time)$/;"	f
+traverseBreadthFirst	data-structures/tree.js	/^Tree.prototype.traverseBreadthFirst = function(fn) {$/;"	f
+traverseDepthFirst	data-structures/tree.js	/^Tree.prototype.traverseDepthFirst = function(fn) {$/;"	f
+traverseDepthFirstInOrder	timed/bst.js	/^  traverseDepthFirstInOrder(cb) {$/;"	f
+traverseDepthFirstPostOrder	timed/bst.js	/^  traverseDepthFirstPostOrder(cb) {$/;"	f
+traverseDepthFirstPreOrder	timed/bst.js	/^  traverseDepthFirstPreOrder(cb) {$/;"	f
+traverseDepthFirst_inOrder	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_inOrder = function(fn) {$/;"	f
+traverseDepthFirst_postOrder	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_postOrder = function(fn) {$/;"	f
+traverseDepthFirst_preOrder	data-structures/bst.js	/^BinarySearchTree.prototype.traverseDepthFirst_preOrder = function(fn) {$/;"	f
 until	data-structures/queue.js	/^Queue.prototype.until = function(value) {$/;"	f
 while	data-structures/linked-list.js	/^  while (parent) {$/;"	f
 while	data-structures/linked-list.js	/^  while (parent.next && parent.next !== node) {$/;"	f
